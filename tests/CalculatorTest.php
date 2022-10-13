@@ -68,22 +68,15 @@ class CalculatorTest extends TestCase
     ) {
         $scenarioB = new ScenarioB($start, $end, $distance);
 
-        $scenarioB->modify([$value, $distanceValue]);
-
         $calculator = new Calculator($scenarioB);
 
         $result = $calculator->calculate();
 
+        $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
 
+        $expected = $result->distance();
 
-//        $calculator = $this->getCalculator(static::SCENARIO_B);
-//        $result = $calculator->calculate($start, $end, $distance);
-//
-//        $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
-//
-//        $expected = $result->distance();
-//
-//        $this->assertEquals($distanceValue, $expected->value(), "{$distance} units of distance should have a value of {$value}");
+        $this->assertEquals($distanceValue, $expected->value(), "{$distance} units of distance should have a value of {$value}");
     }
 
     public function get_scenario_b_values(): array
