@@ -1,0 +1,18 @@
+[2022-10-13 07:41:04] local.ERROR: Command "tinker" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"tinker\" is not defined. at /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php:692)
+[stacktrace]
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run()
+#4 /home/grzegorz/projects/tests/trip-calculator/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2022-10-13 07:42:53] local.ERROR: Command "tinker" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"tinker\" is not defined. at /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php:692)
+[stacktrace]
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/console/Application.php(102): Symfony\\Component\\Console\\Application->run()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Console/Kernel.php(116): Illuminate\\Console\\Application->run()
+#4 /home/grzegorz/projects/tests/trip-calculator/artisan(35): Laravel\\Lumen\\Console\\Kernel->handle()
+#5 {main}
+"} 
