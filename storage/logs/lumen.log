@@ -1,0 +1,346 @@
+[2022-10-12 19:51:49] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 19:58:36] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:05:39] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:12:11] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:12:35] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:15:20] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:19:24] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:19:43] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:23:09] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 20:23:18] lumen.ERROR: ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php:788
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(788): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(757): Illuminate\Container\Container->resolveDependencies()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(564): Illuminate\Container\Container->resolve()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(248): Illuminate\Container\Container->makeWith()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/artisan(32): Laravel\Lumen\Application->make()
+#10 {main}  
+[2022-10-12 20:23:46] lumen.ERROR: ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php:788
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(788): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(757): Illuminate\Container\Container->resolveDependencies()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(564): Illuminate\Container\Container->resolve()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(248): Illuminate\Container\Container->makeWith()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/artisan(32): Laravel\Lumen\Application->make()
+#10 {main}  
+[2022-10-12 20:23:50] lumen.ERROR: ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php:788
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(788): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(757): Illuminate\Container\Container->resolveDependencies()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(564): Illuminate\Container\Container->resolve()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(248): Illuminate\Container\Container->makeWith()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/artisan(32): Laravel\Lumen\Application->make()
+#10 {main}  
+[2022-10-12 20:23:55] lumen.ERROR: ErrorException: Method ReflectionParameter::getClass() is deprecated in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php:788
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(788): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(757): Illuminate\Container\Container->resolveDependencies()
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(564): Illuminate\Container\Container->resolve()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(248): Illuminate\Container\Container->makeWith()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/artisan(32): Laravel\Lumen\Application->make()
+#10 {main}  
+[2022-10-12 19:36:40] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 19:36:47] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
+[2022-10-12 19:36:52] lumen.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Config\Repository::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:116
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php(9): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#1 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(571): include('...')
+#2 /home/grzegorz/projects/tests/trip-calculator/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#3 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(298): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#5 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#6 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#7 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#8 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(577): Laravel\Lumen\Application->make()
+#9 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(551): Laravel\Lumen\Application->configure()
+#10 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(314): Laravel\Lumen\Application->loadComponent()
+#11 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(726): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#12 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(608): Illuminate\Container\Container->build()
+#13 /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/container/Container.php(575): Illuminate\Container\Container->resolve()
+#14 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(210): Illuminate\Container\Container->make()
+#15 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Application.php(665): Laravel\Lumen\Application->make()
+#16 /home/grzegorz/projects/tests/trip-calculator/bootstrap/app.php(27): Laravel\Lumen\Application->withEloquent()
+#17 /home/grzegorz/projects/tests/trip-calculator/artisan(18): require('...')
+#18 {main} in /home/grzegorz/projects/tests/trip-calculator/vendor/illuminate/config/Repository.php:9
+Stack trace:
+#0 /home/grzegorz/projects/tests/trip-calculator/vendor/laravel/lumen-framework/src/Concerns/RegistersExceptionHandlers.php(54): Laravel\Lumen\Application->handleShutdown()
+#1 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}()
+#2 {main}  
