@@ -1,13 +1,16 @@
 
 ```
 1. updated necessary packages to lastest version
-- app.php required little of modification because of breaking changes
+- app.php required modifications because of breaking changes
 ```
 ```php
+// inserted
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
 $dotenv->load();
-//instead
+// --------
+//removed
 (new Dotenv\Dotenv(__DIR__.'/../'))->load();
+// --------
 ```
 
 ```

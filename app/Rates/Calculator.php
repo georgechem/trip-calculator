@@ -3,22 +3,23 @@
 namespace App\Rates;
 
 use App\Contracts\Calculator as CalculatorContract;
+use App\Contracts\PriceInterface;
 use App\Contracts\Result as ResultContract;
+use App\Contracts\ScenarioInterface;
+use App\Helper;
 use Carbon\Carbon;
 
 class Calculator implements CalculatorContract
 {
-    /**
-     * Calculate our rates.
-     *
-     * @param \Carbon\Carbon $start
-     * @param \Carbon\Carbon $end
-     * @param int $distance
-     *
-     * @return \App\Contracts\Result
-     */
-    public function calculate(Carbon $start, Carbon $end, int $distance): ResultContract
+    protected ScenarioInterface $scenario;
+
+    public function __construct(ScenarioInterface $scenario)
     {
-        return new Result(0, new Distance(0));
+        $this->scenario = $scenario;
+    }
+
+    public function calculate(): ResultContract
+    {
+        return $this->scenario->getPrice();
     }
 }
