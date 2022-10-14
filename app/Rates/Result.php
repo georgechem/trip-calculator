@@ -2,7 +2,6 @@
 
 namespace App\Rates;
 
-use App\Contracts\CurrencyInterface;
 use App\Contracts\Distance as DistanceContract;
 use App\Contracts\Result as ResultContract;
 

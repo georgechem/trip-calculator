@@ -10,9 +10,9 @@ abstract class Scenario
 
     protected Carbon $end;
 
-    protected int $distance;
+    protected ConstrainsInterface $constrains;
 
-    protected int $distancePrice;
+    protected int $distance;
 
     protected int $price;
 
@@ -21,18 +21,21 @@ abstract class Scenario
         $this->start = $start;
         $this->end = $end;
         $this->distance = $distance;
-        $this->distancePrice = 0;
+        $this->price = 0;
+
     }
 
-    public function getDistancePrice(): int
+    public function setConstrains(ConstrainsInterface $constrains): void
     {
-        return $this->distancePrice;
+        $this->constrains = $constrains;
     }
 
-    public function setDistancePrice(int $price): void
+    public function priceForDistance():Int
     {
-        $this->setDistancePrice = $price;
+        return 0;
     }
+
+
 
 
 }

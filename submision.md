@@ -30,3 +30,8 @@ to allow auto-loading classes for test environment
 As updated phpunit test to latest version, xml schema become deprecated. Migrated configuration to the new one.
 
 After all those changes environment got ready for development. After running the test got all test failing and no other errors.
+
+I used Abstract Class for Scenarios as think that is a good fit in this project.
+I created ScenarioInterface only to show inheritance and use of interface in action however in this project method 
+getPrice() should also go to abstract class Scenario.
+

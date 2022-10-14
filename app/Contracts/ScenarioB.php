@@ -8,12 +8,11 @@ use App\Rates\Distance;
 
 class ScenarioB extends Scenario implements ScenarioInterface
 {
+
     public function getPrice(): Result
     {
         $start = Helper::clamp($this->start);
         $end = Helper::clamp($this->end);
-
-        $this->price = 0;
 
         $hours = $end->diffInHours($start);
 
@@ -25,11 +24,14 @@ class ScenarioB extends Scenario implements ScenarioInterface
 
         $this->price += (8500 * $full_days) + $rest;
 
-        if($this->distance > 50){
-            $this->distancePrice = ($this->distance - 50) * 50;
-        }
-
-        return new Result($this->price, new Distance($this->distance));
+        return new Result($this->price, new Distance($this));
     }
+
+    public function priceForDistance(): int
+    {
+        if($this->distance > 50) return ($this->distance - 50) * 50;
+        else return 0;
+    }
+
 
 }

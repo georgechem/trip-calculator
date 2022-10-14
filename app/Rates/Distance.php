@@ -3,33 +3,22 @@
 namespace App\Rates;
 
 use App\Contracts\Distance as DistanceContract;
+use App\Contracts\Scenario;
+use App\Contracts\ScenarioInterface;
 
 class Distance implements DistanceContract
 {
-    /**
-     * The value of this trip, as an integer (base currency, e.g. pennies).
-     *
-     * @var int
-     */
-    protected $value;
+    protected Scenario $scenario;
 
-    /**
-     * Create a new Result.
-     *
-     * @param int $value
-     */
-    public function __construct(int $value)
+    public function __construct(Scenario $scenario)
     {
-        $this->value = $value;
+        $this->scenario = $scenario;
     }
 
-    /**
-     * Get the amount for this result, before tax.
-     *
-     * @return int
-     */
     public function value(): int
     {
-        return $this->value;
+        return $this->scenario->priceForDistance();
     }
+
+
 }

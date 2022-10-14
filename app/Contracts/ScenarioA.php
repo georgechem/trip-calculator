@@ -18,8 +18,7 @@ class ScenarioA extends Scenario implements ScenarioInterface
 
         $minutes = $end->diffInMinutes($start);
 
-        return new Result(floor($minutes/60 * 400), new Distance($this->distance));
-
+        return new Result(floor($minutes/60 * 400), new Distance($this));
 
     }
 }

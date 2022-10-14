@@ -2,8 +2,10 @@
 
 use App\Contracts\ScenarioA;
 use App\Contracts\ScenarioB;
+use App\Contracts\ScenarioC;
 use App\Rates\Calculator;
 use Carbon\Carbon as c;
+use App\Contracts\Constrains;
 
 class CalculatorTest extends TestCase
 {
@@ -74,9 +76,8 @@ class CalculatorTest extends TestCase
 
         $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
 
-        $expected = $result->distance();
+        $this->assertEquals($distanceValue, $result->distance()->value(), "{$distance} units of distance should have a value of {$value}");
 
-        $this->assertEquals($distanceValue, $expected->value(), "{$distance} units of distance should have a value of {$value}");
     }
 
     public function get_scenario_b_values(): array
@@ -113,16 +114,22 @@ class CalculatorTest extends TestCase
         int $value, int $distanceValue
     ) {
         // TODO: comment out the skip if you're feeling brave.
-//        $this->markTestSkipped('Uncomment the skip in Scenario C to attempt it');
-//
-//        $calculator = $this->getCalculator(static::SCENARIO_C);
-//        $result = $calculator->calculate($start, $end, $distance);
+        //$this->markTestSkipped('Uncomment the skip in Scenario C to attempt it');
+
+        $scenario = new ScenarioC($start, $end, $distance);
+
+        $scenario->setConstrains(new Constrains($start, $end));
+
+        //var_dump($scenario->getPrice()->value());
+
+        $calculator = new Calculator($scenario);
+
+
+        $result = $calculator->calculate();
 //
 //        $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
 //
-//        $expected = $result->distance();
-//
-//        $this->assertEquals($distanceValue, $expected->value(), "{$distance} units of distance should have a value of {$value}");
+//        $this->assertEquals($distanceValue, $result->distance()->value(), "{$distance} units of distance should have a value of {$value}");
     }
 
     public function get_scenario_c_values(): array
