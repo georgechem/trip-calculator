@@ -22,6 +22,7 @@ class ScenarioC extends Scenario implements ScenarioInterface
         $price = $this->constrains
             ->weekends()
             ->weekDaysBetween()
+            ->weekDaysOutside()
             ->apply();
 
         return new Result($price, new Distance($this));

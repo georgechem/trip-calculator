@@ -1,5 +1,6 @@
 <?php
 
+use App\Contracts\Days;
 use App\Contracts\ScenarioA;
 use App\Contracts\ScenarioB;
 use App\Contracts\ScenarioC;
@@ -118,7 +119,8 @@ class CalculatorTest extends TestCase
 
         $scenario = new ScenarioC($start, $end, $distance);
 
-        $scenario->setConstrains(new Constrains($start, $end));
+        $day = new Days($start);
+        $scenario->setConstrains(new Constrains($start, $end, $day));
 
         //var_dump($scenario->getPrice()->value());
 
