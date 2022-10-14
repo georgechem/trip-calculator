@@ -28,13 +28,14 @@ class Constrains implements ConstrainsInterface
         $weekendHours = 0;
         $hoursTotal = $span->days * 24 + $span->hours;
         for($i = 0; $i <= $hoursTotal; $i++){
-            $interval = CarbonInterval::hours(1);
+            $currentDate = new Carbon($this->start);
+            $interval = CarbonInterval::hours($i);
             if(
-                $this->start->add($interval)->isSaturday() ||
-                $this->start->add($interval)->isSunday()
+                $currentDate->add($interval)->isSaturday() ||
+                $currentDate->add($interval)->isSunday()
             ){
                 // Limitation (we're charging customer only for full weekend hours)
-                if(!$this->start->add(CarbonInterval::hours($i + 1))->isMonday()){
+                if(!$currentDate->add(CarbonInterval::hours($i + 1))->isMonday()){
                     $weekendHours++;
                 }
             }
@@ -52,27 +53,57 @@ class Constrains implements ConstrainsInterface
         $span = $this->end->diffAsCarbonInterval($this->start);
         $weekDaysBetweenHours = 0;
         $hoursTotal = $span->days * 24 + $span->hours;
+        $hours = [];
+        $dayKeys = ['mon', 'tue', 'wed', 'thu', 'fri'];
+        foreach ($dayKeys as $day){
+            $hours[$day] = ['hours' => 0, 'price' => 0];
+        }
 
-        for($i = 0; $i <= $hoursTotal; $i++){
-            $interval = CarbonInterval::hours(1);
-            if(
-                $this->start->add($interval)->isMonday() ||
-                $this->start->add($interval)->isTuesday() ||
-                $this->start->add($interval)->isWednesday() ||
-                $this->start->add($interval)->isThursday() ||
-                $this->start->add($interval)->isFriday()
-            ){
-                var_dump($this->start->format('Y-M-D H:i'));
-                // Limitation (we're charging customer only for full weekday between hours )
-                if(!$this->start->add(CarbonInterval::hours($i + 1))->isSaturday()){
-                    $weekDaysBetweenHours++;
+        // Limitation: only charging for full hours
+        for($i = 1; $i <= $hoursTotal; $i++){
+            $currentDate = new Carbon($this->start);
+            $currentDate->add($i, 'hours');
+            // var_dump($currentDate->format('Y-M-D H:i'));
+            if($currentDate->isMonday()){
+                $stillCurrentDay = (new Carbon($currentDate))->add(1, 'hours');
+                if($stillCurrentDay->isMonday()){
+                    if($currentDate->hour >= 7 && $currentDate->hour <= 19) $hours['mon']['hours'] += 1;
+                }
+            }
+            if($currentDate->isTuesday()){
+                $stillCurrentDay = (new Carbon($currentDate))->add(1, 'hours');
+                if($stillCurrentDay->isTuesday()){
+                    if($currentDate->hour >= 7 && $currentDate->hour <= 19) $hours['tue']['hours'] += 1;
+                }
+            }
+            if($currentDate->isWednesday()){
+                $stillCurrentDay = (new Carbon($currentDate))->add(1, 'hours');
+                if($stillCurrentDay->isWednesday()){
+                    if($currentDate->hour >= 7 && $currentDate->hour <= 19) $hours['wed']['hours'] += 1;
+                }
+            }
+            if($currentDate->isThursday()){
+                $stillCurrentDay = (new Carbon($currentDate))->add(1, 'hours');
+                if($stillCurrentDay->isThursday()){
+                    if($currentDate->hour >= 7 && $currentDate->hour <= 19) $hours['thu']['hours'] += 1;
+                }
+            }
+            if($currentDate->isFriday()){
+                $stillCurrentDay = (new Carbon($currentDate))->add(1, 'hours');
+                if($stillCurrentDay->isFriday()){
+                    if($currentDate->hour >= 7 && $currentDate->hour <= 19) $hours['fri']['hours'] += 1;
                 }
             }
         }
-        var_dump("is week between hour", $weekDaysBetweenHours);
-        // var_dump($this->start->format('Y-M-D H:i'));
 
-        $this->value += $weekDaysBetweenHours * 665;
+        foreach ($dayKeys as $day){
+            $hours[$day]['price'] += $hours[$day]['hours'] * 665;
+            // price is capped
+            if( $hours[$day]['price'] > 3900) $hours[$day]['price'] = 3900;
+        }
+        foreach ($dayKeys as $day){
+            $this->value += $hours[$day]['price'];
+        }
 
         return $this;
 

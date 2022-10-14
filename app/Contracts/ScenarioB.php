@@ -12,6 +12,7 @@ class ScenarioB extends Scenario implements ScenarioInterface
     public function getPrice(): Result
     {
         $start = Helper::clamp($this->start);
+
         $end = Helper::clamp($this->end);
 
         $hours = $end->diffInHours($start);
