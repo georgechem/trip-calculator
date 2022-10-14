@@ -3,7 +3,6 @@
 namespace App\Rates;
 
 use App\Contracts\Calculator as CalculatorContract;
-use App\Contracts\PriceInterface;
 use App\Contracts\Result as ResultContract;
 use App\Contracts\ScenarioInterface;
 

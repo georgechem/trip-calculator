@@ -4,7 +4,6 @@ namespace App\Rates;
 
 use App\Contracts\Distance as DistanceContract;
 use App\Contracts\Scenario;
-use App\Contracts\ScenarioInterface;
 
 class Distance implements DistanceContract
 {

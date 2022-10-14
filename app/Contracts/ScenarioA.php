@@ -3,7 +3,6 @@
 namespace App\Contracts;
 
 use App\Helper;
-use Carbon\Carbon;
 use App\Rates\Result;
 use App\Rates\Distance;
 

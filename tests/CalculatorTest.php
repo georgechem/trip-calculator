@@ -126,8 +126,8 @@ class CalculatorTest extends TestCase
 
 
         $result = $calculator->calculate();
-//
-//        $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
+
+        $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
 //
 //        $this->assertEquals($distanceValue, $result->distance()->value(), "{$distance} units of distance should have a value of {$value}");
     }

@@ -3,9 +3,9 @@
 namespace App\Contracts;
 
 use App\Helper;
-use Carbon\Carbon;
 use App\Rates\Result;
 use App\Rates\Distance;
+use Carbon\Carbon;
 
 class ScenarioC extends Scenario implements ScenarioInterface
 {
@@ -21,6 +21,7 @@ class ScenarioC extends Scenario implements ScenarioInterface
     {
         $price = $this->constrains
             ->weekends()
+            ->weekDaysBetween()
             ->apply();
 
         return new Result($price, new Distance($this));
