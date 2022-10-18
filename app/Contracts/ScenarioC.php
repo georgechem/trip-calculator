@@ -23,10 +23,13 @@ class ScenarioC extends Scenario implements ScenarioInterface
             ->weekends()
             ->weekDaysBetween()
             ->weekDaysOutside()
+            ->nineToSixPromo()
             ->apply();
 
         return new Result($price, new Distance($this));
     }
+
+
 
     public function priceForDistance(): int
     {

@@ -10,9 +10,6 @@ use App\Contracts\Constrains;
 
 class CalculatorTest extends TestCase
 {
-    const SCENARIO_A = 0;
-    const SCENARIO_B = 1;
-    const SCENARIO_C = 2;
 
     /**
      * @dataProvider get_scenario_a_values
@@ -119,19 +116,17 @@ class CalculatorTest extends TestCase
 
         $scenario = new ScenarioC($start, $end, $distance);
 
-        $day = new Days($start);
-        $scenario->setConstrains(new Constrains($start, $end, $day));
+        $constrains = new Constrains($start, $end);
 
-        //var_dump($scenario->getPrice()->value());
+        $scenario->setConstrains($constrains);
 
         $calculator = new Calculator($scenario);
-
 
         $result = $calculator->calculate();
 
         $this->assertEquals($value, $result->value(), "{$start} to {$end} has a value of {$value}");
-//
-//        $this->assertEquals($distanceValue, $result->distance()->value(), "{$distance} units of distance should have a value of {$value}");
+
+        $this->assertEquals($distanceValue, $result->distance()->value(), "{$distance} units of distance should have a value of {$value}");
     }
 
     public function get_scenario_c_values(): array
@@ -143,6 +138,12 @@ class CalculatorTest extends TestCase
             [new c('2016-05-14 12:00'), new c('2016-05-14 16:00'), 0, 800, 0],
             [new c('2016-05-12 12:00'), new c('2016-05-14 16:00'), 0, 8600, 0],
             [new c('2016-05-13 20:00'), new c('2016-05-14 06:00'), 0, 1600, 0],
+            // Probably mistake here as value should be as follows:
+            // 1h between 7am - 7pm weekdays = 665
+            // 5h between 7pm - 0am weekdays = 2000
+            // 4h weekend 0am - 4am weekend = 800
+            //                                -----
+            //                                 3465
             [new c('2016-05-13 18:00'), new c('2016-05-14 04:00'), 0, 2400, 0],
         ];
     }
